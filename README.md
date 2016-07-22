@@ -21,9 +21,9 @@ It also uses thoses awesomes libraries:
 Each sample is on a fragment and set up in the navigation drawer. It's sorted by complexity (from top to bottom). Also, on each sample, an explanatory TextView is here to briefly explain what's happening:
 * [Hello World] : In this fragment, you'll learn how to use an Observable and Observer. Also, you'll create your first stream and use your first operator : map( ).
 
-```
-EXPLICATION: When you click on button "Map( ) my words", you'll subscribe to an observable on TextView Text. The relative stream (myStream) replace the words "Massive View Controller" by "MVVM", "Hell Callback" by "ReactiveX" and "AsyncTask" by "RxJava". Finally it adds at the end of TextView "<3 <3 <3".
-```
+
+>EXPLICATION: When you click on button "Map( ) my words", you'll subscribe to an observable on TextView Text. The relative stream (myStream) replace the words "Massive View Controller" by "MVVM", "Hell Callback" by "ReactiveX" and "AsyncTask" by "RxJava". Finally it adds at the end of TextView "<3 <3 <3".
+
 * [Famous Operator] : In this fragment, you'll learn the most commons operators and get used with them : flatMap( ), filter( ), take( ), doOnNext( )
 ```
 EXPLICATION: When you click on "Play Happy !" or use the SeekBar, you'll subscribe to an observable on a string array. The relative stream (myStream) observe each item of string array, and apply to it some functions (setSmileyToItem, setCarriotReturnToItem & filterVersionAndroidThatSucks). It also take only the number of item setted by take( ).Finally, each item is showed to the TextView.
