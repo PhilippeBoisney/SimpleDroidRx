@@ -16,26 +16,33 @@ It also uses thoses awesomes libraries:
 
 ### List of Samples
 Each sample is on a fragment and set up in the navigation drawer. It's sorted by complexity (from top to bottom). Also, on each sample, an explanatory TextView is here to briefly explain what's happening:
-* [Hello World] : In this fragment, you'll learn how to use an Observable and Observer. Also, you'll create your first stream and use your first operator : map( ). 
-> When you click on button "Map( ) my words", you'll subscribe to an observable on TextView Text. The relative stream (myStream) replace the words "Massive View Controller" by "MVVM", "Hell Callback" by "ReactiveX" and "AsyncTask" by "RxJava". Finally it adds at the end of TextView "<3 <3 <3".
-* * *
-* [Famous Operator] : In this fragment, you'll learn the most commons operators and get used with them : flatMap( ), filter( ), take( ), doOnNext( )
-> When you click on "Play Happy !" or use the SeekBar, you'll subscribe to an observable on a string array. The relative stream (myStream) observe each item of string array, and apply to it some functions (setSmileyToItem, setCarriotReturnToItem & filterVersionAndroidThatSucks). It also take only the number of item setted by take( ).Finally, each item is showed to the TextView.
-***
-* [Error Handling] : In this fragment, you'll learn how to handle error properly. You'll use map( ) and onError ().
-> When you press on button, you'll subscribe to an observable to relative TextView text. The relative stream (myStreamThatHandleError) execute a func that will test string. If it contains "callback" AND "hell" then it will throw an error.
-***
-* [Background Tasks] : In this fragment, you'll learn how to run one and multiple tasks in background.
-> When you press the simple "SIMPLE TASK" button, you'll subscribe to an observable that execute a single task running on background (During 4sec) and stop.\
-When you press the "DOUBLE TASKS" button, you'll subscribe to an other one observable that execute a first long task to background (During 8sec) and when finished, a second single task will start (During 4 sec).
-***
-* [Android Simple Sample] : In this fragment, you'll learn how to set an observer to a button using RxView.clicks( ), and intercept network changes.
-> When you start fragment, you subscribe to an observable on network changes. When you disable Wifi or mobile connection, you'll get notified by a Snackbar.\
-When you press the "SHOW" button, it subscribe to an observable. It will show a Snackbar.
-***
-* [Android REST Sample] : In this fragment, you'll learn how to make multiple http requests with only single stream.
-> When you press "REFRESH" button, it will subscribe to an observable that gets Github followers of each people you've defined (In a string array), and after processed of requests, update the textview.
+* [Hello World] : In this fragment, you'll learn how to use an Observable and Observer. Also, you'll create your first stream and use your first operator : map( ).
 
+```
+EXPLICATION: When you click on button "Map( ) my words", you'll subscribe to an observable on TextView Text. The relative stream (myStream) replace the words "Massive View Controller" by "MVVM", "Hell Callback" by "ReactiveX" and "AsyncTask" by "RxJava". Finally it adds at the end of TextView "<3 <3 <3".
+```
+* [Famous Operator] : In this fragment, you'll learn the most commons operators and get used with them : flatMap( ), filter( ), take( ), doOnNext( )
+```
+EXPLICATION: When you click on "Play Happy !" or use the SeekBar, you'll subscribe to an observable on a string array. The relative stream (myStream) observe each item of string array, and apply to it some functions (setSmileyToItem, setCarriotReturnToItem & filterVersionAndroidThatSucks). It also take only the number of item setted by take( ).Finally, each item is showed to the TextView.
+```
+* [Error Handling] : In this fragment, you'll learn how to handle error properly. You'll use map( ) and onError ().
+```
+EXPLICATION: When you press on button, you'll subscribe to an observable to relative TextView text. The relative stream (myStreamThatHandleError) execute a func that will test string. If it contains "callback" AND "hell" then it will throw an error.
+```
+* [Background Tasks] : In this fragment, you'll learn how to run one and multiple tasks in background.
+```
+EXPLICATION: When you press the simple "SIMPLE TASK" button, you'll subscribe to an observable that execute a single task running on background (During 4sec) and stop.
+When you press the "DOUBLE TASKS" button, you'll subscribe to an other one observable that execute a first long task to background (During 8sec) and when finished, a second single task will start (During 4 sec).
+```
+* [Android Simple Sample] : In this fragment, you'll learn how to set an observer to a button using RxView.clicks( ), and intercept network changes.
+```
+EXPLICATION: When you start fragment, you subscribe to an observable on network changes. When you disable Wifi or mobile connection, you'll get notified by a Snackbar.
+When you press the "SHOW" button, it subscribe to an observable. It will show a Snackbar.
+```
+* [Android REST Sample] : In this fragment, you'll learn how to make multiple http requests with only single stream.
+```
+EXPLICATION: When you press "REFRESH" button, it will subscribe to an observable that gets Github followers of each people you've defined (In a string array), and after processed of requests, update the textview.
+```
 ### Contribute
 It will be awesome if you contribute to this project adding you own sample(s). Just follow this checklist :
 * Create a Fragment and name it with the name of your sample. Put it on "Fragments" package. Also, create it's layout. You could use the other fragment as a model.
@@ -68,7 +75,7 @@ License
  [RxBroadcast]: <https://github.com/cantrowitz/RxBroadcast>
  [RxBinding]: <https://github.com/JakeWharton/RxBinding>
  
- [Hello World]: <#>
+ [Hello World]: <http://www.google.fr>
  [Famous Operator]: <#>
  [Error Handling]: <#>
  [Background Tasks]: <#>
