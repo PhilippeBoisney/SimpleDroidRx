@@ -1,3 +1,6 @@
+<p align="center">
+ <img src ="/banniere.png", align="center"/>
+</p>
 # SimpleDroidRx
 An application that helps you learn and better understand ReactiveX on Android.
 
