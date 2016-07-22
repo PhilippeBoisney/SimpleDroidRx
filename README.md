@@ -19,9 +19,9 @@ It also uses thoses awesomes libraries:
 
 ### Screenshots
 <p align="center">
- <img width=100 src ="/Screenshots/hello_worlds_screenshot.png", align="center"/>
- <img width=100 src ="/Screenshots/famous_operators_screenshot.png", align="center"/>
- <img width=100 src ="/Screenshots/error_handling_screenshot.png", align="center"/>
+ <img width=200 src ="/Screenshots/hello_worlds_screenshot.png", align="center"/>
+ <img width=200 src ="/Screenshots/famous_operators_screenshot.png", align="center"/>
+ <img width=200 src ="/Screenshots/error_handling_screenshot.png", align="center"/>
 </p>
 
 ### List of Samples
