@@ -1,6 +1,7 @@
 package com.cookminute.simpledroidrx.Fragments;
 
 import android.os.Bundle;
+import android.support.design.widget.Snackbar;
 import android.support.percent.PercentRelativeLayout;
 import android.support.v4.app.Fragment;
 import android.util.Log;
@@ -110,7 +111,7 @@ public class Android_REST_Sample_Fragment extends Fragment {
             public void onCompleted() { stopAnimation(); }
 
             @Override
-            public void onError(Throwable e) {Log.e("TAG", "Error called : "+e.getMessage()); }
+            public void onError(Throwable e) {updateDesignOnError(e); }
         };
     }
 
@@ -130,6 +131,11 @@ public class Android_REST_Sample_Fragment extends Fragment {
     private void updateDesign(String s){
         Log.e("TAG", "onNext called !"+s);
         txtView.setText(s);
+    }
+
+    private void updateDesignOnError(Throwable e){
+        Snackbar.make(rootView, e.toString(),Snackbar.LENGTH_LONG);
+        stopAnimation();
     }
 
 }

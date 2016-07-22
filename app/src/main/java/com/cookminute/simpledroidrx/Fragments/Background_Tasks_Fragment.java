@@ -196,8 +196,10 @@ public class Background_Tasks_Fragment extends Fragment {
     private void startRunningNormalTask(){
         Log.e("TAG", "Start normal task...");
         counterRunningTasks.onNext(counterRunningTasks.getValue()+1);
-        progressNormal.setVisibility(View.VISIBLE);
         counterNormalRunningTask++;
+        if (progressNormal != null){
+            progressNormal.setVisibility(View.VISIBLE);
+        }
     }
 
     private void stopRunningNormalTask(){
@@ -205,7 +207,9 @@ public class Background_Tasks_Fragment extends Fragment {
         counterRunningTasks.onNext(counterRunningTasks.getValue()-1);
         counterNormalRunningTask--;
         if (counterNormalRunningTask == 0 ){
-            progressNormal.setVisibility(View.GONE);
+            if (progressNormal != null){
+                progressNormal.setVisibility(View.GONE);
+            }
         }
     }
 
@@ -214,8 +218,10 @@ public class Background_Tasks_Fragment extends Fragment {
     private void startRunningLongTask(){
         Log.e("TAG", "Start long task...");
         counterRunningTasks.onNext(counterRunningTasks.getValue()+1);
-        progressLong.setVisibility(View.VISIBLE);
         counterLongRunningTask++;
+        if (progressLong != null){
+            progressLong.setVisibility(View.VISIBLE);
+        }
     }
 
     private void stopRunningLongTask(){
@@ -223,7 +229,9 @@ public class Background_Tasks_Fragment extends Fragment {
         counterRunningTasks.onNext(counterRunningTasks.getValue()-1);
         counterLongRunningTask--;
         if (counterLongRunningTask == 0 ) {
-            progressLong.setVisibility(View.GONE);
+            if (progressLong != null){
+                progressLong.setVisibility(View.GONE);
+            }
         }
     }
 
@@ -239,15 +247,17 @@ public class Background_Tasks_Fragment extends Fragment {
     }
 
     private void updateCounterDesign(Integer value){
-        txtViewStateLong.setText("LONG TASK ("+counterLongRunningTask+")");
-        txtViewStateNormal.setText("NORMAL TASK ("+counterNormalRunningTask+")");
-        txtViewCounter.setText("Task(s) running: "+value.toString());
-        if (value == 0){
-            title.setText("Let's run the world ! Or at least tasks...");
-        } else if (value == 1){
-            title.setText("A task is running...");
-        } else {
-            title.setText(value+" tasks are running...");
+        if (rootView != null){
+            txtViewStateLong.setText("LONG TASK ("+counterLongRunningTask+")");
+            txtViewStateNormal.setText("NORMAL TASK ("+counterNormalRunningTask+")");
+            txtViewCounter.setText("Task(s) running: "+value.toString());
+            if (value == 0){
+                title.setText("Let's run the world ! Or at least tasks...");
+            } else if (value == 1){
+                title.setText("A task is running...");
+            } else {
+                title.setText(value+" tasks are running...");
+            }
         }
     }
 }
