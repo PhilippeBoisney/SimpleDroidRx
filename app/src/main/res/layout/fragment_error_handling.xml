@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:layout_alignParentTop="true"
+        app:layout_heightPercent="30%">
+
+
+        <TextView
+            android:id="@+id/txtViewPolite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I really love ReactiveX and RxJava !"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_centerHorizontal="true"
+            app:layout_marginTopPercent="30%"/>
+
+        <TextView
+            android:id="@+id/txtViewRude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="What ? callback hell is actually a pretty good thing !"
+            android:textColor="@color/colorPrimary"
+            android:layout_centerHorizontal="true"
+            app:layout_marginBottomPercent="30%"
+            android:layout_alignParentBottom="true"/>
+
+
+    </android.support.percent.PercentRelativeLayout>
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:layout_alignParentBottom="true"
+        app:layout_heightPercent="70%">
+
+        <Button
+            android:id="@+id/btn_start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_widthPercent="50%"
+            android:text="Test Blue TxtView"
+            app:layout_marginTopPercent="10%"/>
+
+        <Button
+            android:id="@+id/btn_stop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_widthPercent="50%"
+            android:text="Test Red TxtView"
+            android:layout_toRightOf="@id/btn_start"
+            app:layout_marginTopPercent="10%"/>
+
+        <TextView
+            android:id="@+id/txtViewHelpTitle"
+            android:layout_below="@id/btn_start"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:text="EXPLICATION"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_marginTopPercent="10%"/>
+
+        <TextView
+            android:id="@+id/txtViewHelp"
+            android:layout_below="@id/txtViewHelpTitle"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            app:layout_marginRightPercent="5%"
+            app:layout_marginLeftPercent="5%"
+            android:text="In this fragment, you'll learn how to handle error properly. \n\n1 - When you press the 'TEST BLUE TEXTVIEW' button, we check if the first textview contains bad words. Same thing for button 'TEST RED TXTVIEW', but in this case, we throw an error ! \n\nIn this example, you'll use onError( ) and map( ) methods."
+            app:layout_marginTopPercent="2%"
+            android:scrollbars = "vertical"/>
+
+
+    </android.support.percent.PercentRelativeLayout>
+
+
+
+</android.support.percent.PercentRelativeLayout>

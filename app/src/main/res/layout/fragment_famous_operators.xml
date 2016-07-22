@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:layout_alignParentTop="true"
+        app:layout_heightPercent="30%">
+
+
+        <TextView
+            android:id="@+id/txtViewHelloWorld"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Play with me !"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+
+
+    </android.support.percent.PercentRelativeLayout>
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:layout_alignParentBottom="true"
+        app:layout_heightPercent="70%">
+
+        <TextView
+            android:id="@+id/txtViewSeekBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Result max: 0"
+            android:textColor="#FFF"
+            app:layout_marginTopPercent="5%"
+            android:layout_centerHorizontal="true"/>
+
+        <SeekBar
+            android:id="@+id/seek_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_marginLeftPercent="20%"
+            app:layout_marginRightPercent="20%"
+            app:layout_marginTopPercent="10%" />
+
+        <Button
+            android:id="@+id/btn_start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_widthPercent="50%"
+            android:layout_below="@id/seek_bar"
+            android:text="Play Happy !"/>
+
+        <Button
+            android:id="@+id/btn_stop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_widthPercent="50%"
+            android:text="Play UnHappy..."
+            android:layout_toRightOf="@id/btn_start"
+            android:layout_below="@id/seek_bar"/>
+
+        <TextView
+            android:id="@+id/txtViewHelpTitle"
+            android:layout_below="@id/btn_stop"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:text="EXPLICATION"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_marginTopPercent="5%"/>
+
+        <TextView
+            android:id="@+id/txtViewHelp"
+            android:layout_below="@id/txtViewHelpTitle"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            app:layout_marginRightPercent="5%"
+            app:layout_marginLeftPercent="5%"
+            android:text="In this fragment, you'll learn the most commons operators. Also, you'll create your first stream !\n\nflatMap( ): It takes the emissions of one Observable and returns the emissions of another Observable to take its place. \n\nfilter( ): It emits the same item it received, but only if it passes the boolean check.\n\ntake( ): It only emit the n items emitted by an Observable\n\ndoOnNext( ): It allows us to add extra behavior each time an item is emitted"
+            app:layout_marginTopPercent="2%"
+            android:scrollbars = "vertical"/>
+
+
+
+
+    </android.support.percent.PercentRelativeLayout>
+
+
+
+</android.support.percent.PercentRelativeLayout>

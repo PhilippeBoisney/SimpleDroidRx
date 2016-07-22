@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">SimpleDroidRx</string>
+
+    <!-- navigation drawer item labels  -->
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+    <string-array name="nav_drawer_labels">
+        <item>Hello World</item>
+        <item>Famous Operators</item>
+        <item>Error Handling</item>
+        <item>Background Tasks</item>
+        <item>Android Simple Sample</item>
+        <item>Android REST Sample</item>
+    </string-array>
+</resources>

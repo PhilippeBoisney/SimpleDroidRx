@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:layout_alignParentTop="true"
+        app:layout_heightPercent="30%">
+
+        <TextView
+            android:id="@+id/txtViewCounter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:text="Task(s) running: 0"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentRight="true"/>
+
+        <TextView
+            android:id="@+id/txtView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:text="Let's run the world ! Or at least tasks..."
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+
+
+        <TextView
+            android:id="@+id/txtStateLong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:text="LONG TASK (0)"
+            android:textStyle="bold"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            app:layout_marginBottomPercent="20%"/>
+
+        <fr.castorflex.android.smoothprogressbar.SmoothProgressBar
+            android:id="@+id/progressLong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_widthPercent="30%"
+            android:visibility="invisible"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            app:layout_marginBottomPercent="10%"
+            app:spb_color="@color/colorPrimaryDark"
+            android:indeterminate="true"/>
+
+
+        <TextView
+            android:id="@+id/txtStateNormal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:text="NORMAL TASK (0)"
+            android:textStyle="bold"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            app:layout_marginBottomPercent="20%"/>
+
+        <fr.castorflex.android.smoothprogressbar.SmoothProgressBar
+            android:id="@+id/progressNormal"
+            app:layout_widthPercent="30%"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            app:layout_marginBottomPercent="10%"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            app:spb_color="@color/colorPrimary"
+            android:indeterminate="true"/>
+
+
+    </android.support.percent.PercentRelativeLayout>
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:layout_alignParentBottom="true"
+        app:layout_heightPercent="70%">
+
+        <Button
+            android:id="@+id/btn_start1"
+            app:layout_widthPercent="50%"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            app:layout_marginTopPercent="5%"
+            android:text="Simple task"/>
+
+        <Button
+            android:id="@+id/btn_start2"
+            app:layout_widthPercent="50%"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_marginTopPercent="5%"
+            android:layout_toRightOf="@id/btn_start1"
+            android:layout_gravity="center_horizontal"
+            android:text="Double tasks"/>
+
+        <TextView
+            android:id="@+id/txtViewHelpTitle"
+            android:layout_below="@id/btn_start2"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:text="EXPLICATION"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_marginTopPercent="10%"/>
+
+        <TextView
+            android:id="@+id/txtViewHelp"
+            android:layout_below="@id/txtViewHelpTitle"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            app:layout_marginRightPercent="5%"
+            app:layout_marginLeftPercent="5%"
+            android:text="In this fragment, you'll learn how to run one and multiple tasks in background. \n\n1 - When you press the 'SIMPLE TASK' button, a single task (NORMAL TASK) is running on background during 4sec, in a separate thread. \n\n2 - When you press the 'DOUBLE TASKS' button, a first task is running (LONG TASK) during 8sec and when this one finished, a second task (NORMAL TASK) starts automatically."
+            app:layout_marginTopPercent="2%"
+            android:scrollbars = "vertical"/>
+
+
+    </android.support.percent.PercentRelativeLayout>
+
+
+
+</android.support.percent.PercentRelativeLayout>

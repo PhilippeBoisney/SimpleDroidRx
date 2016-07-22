@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:layout_alignParentTop="true"
+        app:layout_heightPercent="30%">
+
+        <TextView
+            android:id="@+id/txtView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            app:layout_marginRightPercent="5%"
+            app:layout_marginLeftPercent="5%"
+            android:textAlignment="center"
+            android:text="Hey ! Try to disable network (Wifi or Mobile) and see what's happening..."
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+
+
+    </android.support.percent.PercentRelativeLayout>
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:layout_alignParentBottom="true"
+        app:layout_heightPercent="70%">
+
+
+        <Button
+            android:id="@+id/btn_start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_widthPercent="50%"
+            app:layout_marginTopPercent="5%"
+            android:text="Show"
+            android:layout_centerHorizontal="true"/>
+
+
+        <TextView
+            android:id="@+id/txtViewHelpTitle"
+            android:layout_below="@id/btn_start"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:text="EXPLICATION"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_marginTopPercent="10%"/>
+
+        <TextView
+            android:id="@+id/txtViewHelp"
+            android:layout_below="@id/txtViewHelpTitle"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            app:layout_marginRightPercent="5%"
+            app:layout_marginLeftPercent="5%"
+            android:text="In this fragment, you'll learn how to set an observer to a button, and intercept network change ! \n\n1 - When you disable network (WiFi or Mobile), an event is sent and a snackbar is showed.\n\n2 - The 'SHOW' button is subscribe to an observable with RxView.clicks( ). When you press it, a snackbar is showed. "
+            app:layout_marginTopPercent="2%"
+            android:scrollbars = "vertical"/>
+
+
+
+    </android.support.percent.PercentRelativeLayout>
+
+
+
+</android.support.percent.PercentRelativeLayout>
