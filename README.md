@@ -22,6 +22,9 @@ It also uses thoses awesomes libraries:
  <img width=200 src ="/Screenshots/hello_worlds_screenshot.png", align="center"/>
  <img width=200 src ="/Screenshots/famous_operators_screenshot.png", align="center"/>
  <img width=200 src ="/Screenshots/error_handling_screenshot.png", align="center"/>
+ <img width=200 src ="/Screenshots/background_tasks_screenshot.png", align="center"/>
+ <img width=200 src ="/Screenshots/android_simple_sample_screenshot.png", align="center"/>
+ <img width=200 src ="/Screenshots/android_rest_sample_screenshot.png", align="center"/>
 </p>
 
 ### List of Samples
