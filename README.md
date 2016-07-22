@@ -19,13 +19,17 @@ It also uses thoses awesomes libraries:
 
 ### Screenshots
 <p align="center">
- <img width=150 src ="/Screenshots/hello_worlds_screenshot.png", align="center"/>
- <img width=150 src ="/Screenshots/famous_operators_screenshot.png", align="center"/>
- <img width=150 src ="/Screenshots/error_handling_screenshot.png", align="center"/>
- <img width=150 src ="/Screenshots/background_tasks_screenshot.png", align="center"/>
- <img width=150 src ="/Screenshots/android_simple_sample_screenshot.png", align="center"/>
- <img width=150 src ="/Screenshots/android_rest_sample_screenshot.png", align="center"/>
+ <img width=200 src ="/Screenshots/hello_worlds_screenshot.png", align="center"/>
+ <img width=200 src ="/Screenshots/famous_operators_screenshot.png", align="center"/>
+ <img width=200 src ="/Screenshots/error_handling_screenshot.png", align="center"/>
 </p>
+<p align="center">
+ <img width=200 src ="/Screenshots/background_tasks_screenshot.png", align="center"/>
+ <img width=200 src ="/Screenshots/android_simple_sample_screenshot.png", align="center"/>
+ <img width=200 src ="/Screenshots/android_rest_sample_screenshot.png", align="center"/>
+</p>
+
+
 
 ### List of Samples
 Each sample is on a fragment and set up in the navigation drawer. It's sorted by complexity (from top to bottom). Also, on each sample, an explanatory TextView is here to briefly explain what's happening:
