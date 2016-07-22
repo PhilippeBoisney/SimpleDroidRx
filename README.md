@@ -25,7 +25,7 @@ Each sample is on a fragment and set up in the navigation drawer. It's sorted by
 
 * [Famous Operator] : In this fragment, you'll learn the most commons operators and get used with them : flatMap( ), filter( ), take( ), doOnNext( )
 
-> <img width=50 src ="/Screenshots/famous_operators_screenshot.png", align="center"/> EXPLICATION: When you click on "Play Happy !" or use the SeekBar, you'll subscribe to an observable on a string array. The relative stream (myStream) observe each item of string array, and apply to it some functions (setSmileyToItem, setCarriotReturnToItem & filterVersionAndroidThatSucks). It also take only the number of item setted by take( ).Finally, each item is showed to the TextView.
+<img width=50 src ="/Screenshots/famous_operators_screenshot.png", align="center"/> >  EXPLICATION: When you click on "Play Happy !" or use the SeekBar, you'll subscribe to an observable on a string array. The relative stream (myStream) observe each item of string array, and apply to it some functions (setSmileyToItem, setCarriotReturnToItem & filterVersionAndroidThatSucks). It also take only the number of item setted by take( ).Finally, each item is showed to the TextView.
 
 * <img width=50 src ="/Screenshots/error_handling_screenshot.png", align="center"/> [Error Handling] : In this fragment, you'll learn how to handle error properly. You'll use map( ) and onError ().
 
