@@ -5,15 +5,15 @@
 An application that helps you learn and better understand ReactiveX on Android.
 
 ### Introduction
-I've created this project because, as anybody knows, learn ReactiveX from scratch it's a awesome challenge, and it has a pretty steep learning curve. So I try to bring together all samples I found useful to better understand ReactiveX and how to use it on an Android app.
+I've created this project because, as anybody knows, learn ReactiveX from scratch it's an awesome challenge, and it has a pretty steep learning curve. So I try to bring together all samples I found useful to better understand ReactiveX and how to use it on an Android app.
 ### How it works ?
-On SimpleDroidRx app, you have several fragments. Each one contains some examples of ReactiveX. Each example is perform using those Rx libraries :
+With SimpleDroidRx app, you have several fragments. Each one contains some examples of ReactiveX. Each example is performed using those Rx libraries :
 * [RxJava] : RxJava is a Java VM implementation of Reactive Extensions: a library for composing asynchronous and event-based programs by using observable sequences.
 * [RxAndroid] : Android specific bindings for RxJava.
 * [RxBroadcast] : Reactive Broadcast and LocalBroadcast for Android.
 * [RxBinding] : RxJava binding APIs for Android UI widgets from the platform and support libraries.
 
-It also uses thoses awesomes libraries:
+It also uses those awesome libraries:
 * [ButterKnife] : Bind Android views and callbacks to fields and methods.
 * [Retrofit] :A type-safe HTTP client for Android and Java
 
@@ -28,40 +28,53 @@ It also uses thoses awesomes libraries:
 </p>
 
 ### List of Samples
-Each sample is on a fragment and set up in the navigation drawer. It's sorted by complexity (from top to bottom). Also, on each sample, an explanatory TextView is here to briefly explain what's happening:
+Each sample is on a fragment and set up in the navigation drawer. It's sorted by level of complexity (from top to bottom). Also, on each sample, an explanatory TextView is here to briefly explain what's happening:
 * [Hello World] : In this fragment, you'll learn how to use an Observable and Observer. Also, you'll create your first stream and use your first operator : map( ).
 
->EXPLICATION: When you click on button "Map( ) my words", you'll subscribe to an observable on TextView Text. The relative stream (myStream) replace the words "Massive View Controller" by "MVVM", "Hell Callback" by "ReactiveX" and "AsyncTask" by "RxJava". Finally it adds at the end of TextView "<3 <3 <3".
+>EXPLICATION: When you click on button "Map( ) my words", you'll subscribe to an observable on TextView Text. The relative stream (myStream) replaces the words "Massive View Controller" by "MVVM", "Hell Callback" by "ReactiveX" and "AsyncTask" by "RxJava". Finally it adds at the end of TextView "<3 <3 <3".
 
 * [Famous Operator] : In this fragment, you'll learn the most commons operators and get used with them : flatMap( ), filter( ), take( ), doOnNext( )
 
->EXPLICATION: When you click on "Play Happy !" or use the SeekBar, you'll subscribe to an observable on a string array. The relative stream (myStream) observe each item of string array, and apply to it some functions (setSmileyToItem, setCarriotReturnToItem & filterVersionAndroidThatSucks). It also take only the number of item setted by take( ).Finally, each item is showed to the TextView.
+>EXPLICATION: When you click on "Play Happy !" or use the SeekBar, you'll subscribe to an observable on a string array. The relative stream (myStream) observes each item of string array, and apply to it some functions (setSmileyToItem, setCarriotReturnToItem & filterVersionAndroidThatSucks). It also takes only the number of item set by take( ).Finally, each item is shown in the TextView.
 
 * [Error Handling] : In this fragment, you'll learn how to handle error properly. You'll use map( ) and onError ().
 
->EXPLICATION: When you press on button, you'll subscribe to an observable to relative TextView text. The relative stream (myStreamThatHandleError) execute a func that will test string. If it contains "callback" AND "hell" then it will throw an error.
+>EXPLICATION: When you press button, you'll subscribe to an observable to relative TextView text. The relative stream (myStreamThatHandleError) executes a function that will test String. If it contains "callback" AND "hell" then it will throw an error.
 
-* [Background Tasks] : In this fragment, you'll learn how to run one and multiple tasks in background.
+* [Background Tasks] : In this fragment, you'll learn how to run one and multiple tasks in the background.
 
->EXPLICATION: When you press the simple "SIMPLE TASK" button, you'll subscribe to an observable that execute a single task running on background (During 4sec) and stop.
-When you press the "DOUBLE TASKS" button, you'll subscribe to an other one observable that execute a first long task to background (During 8sec) and when finished, a second single task will start (During 4 sec).
+>EXPLICATION: When you press the simple "SIMPLE TASK" button, you'll subscribe to an observable that execute a single task running in background (During 4sec) and stop.
+When you press the "DOUBLE TASKS" button, you'll subscribe to another one observable that execute a first long task to background (During 8sec) and when finished, a second single task will start (During 4 sec).
 
 * [Android Simple Sample] : In this fragment, you'll learn how to set an observer to a button using RxView.clicks( ), and intercept network changes.
 
 >EXPLICATION: When you start fragment, you subscribe to an observable on network changes. When you disable Wifi or mobile connection, you'll get notified by a Snackbar.
-When you press the "SHOW" button, it subscribe to an observable. It will show a Snackbar.
+When you press the "SHOW" button, it subscribes to an observable. It will show a Snackbar.
 
 * [Android REST Sample] : In this fragment, you'll learn how to make multiple http requests with only single stream.
 
->EXPLICATION: When you press "REFRESH" button, it will subscribe to an observable that gets Github followers of each people you've defined (In a string array), and after processed of requests, update the textview.
+>EXPLICATION: When you press "REFRESH" button, it will subscribe to an observable that gets Github followers of each person you've defined (In a String array), and after processing of requests, update the TextView.
 
 ### Contribute
 It will be awesome if you contribute to this project adding you own sample(s). Just follow this checklist :
-* Create a Fragment and name it with the name of your sample. Put it on "Fragments" package. Also, create it's layout. You could use the other fragment as a model.
-* Add your fragment in MainActivity on "displayView" function.
-* Add the title of your sample in string.xml on related array (nav_drawer_labels)
-* You can also modify the icon menu of your sample in NavigationDrawerAdapter on "getRessource" function.
-* Make a pull request !
+1. Create a Fragment and name it with the name of your sample. Put it on "Fragments" package. Also, create it's layout. You could use the other fragment as a model.
+<p align="center">
+ <img width=100 src ="/Steps/step1.png", align="center"/>
+</p>
+2. Add your fragment in MainActivity on "displayView" function.
+<p align="center">
+ <img width=100 src ="/Steps/step2.png", align="center"/>
+</p>
+3. Add the title of your sample in string.xml on related array (nav_drawer_labels)
+<p align="center">
+ <img width=100 src ="/Steps/step3.png", align="center"/>
+</p>
+4. You can also modify the icon menu of your sample in NavigationDrawerAdapter on "getRessource" function.
+<p align="center">
+ <img width=100 src ="/Steps/step4.png", align="center"/>
+</p>
+5. Update this README.md with your own infos.
+6. Make a pull request !
 
 License
 -------
