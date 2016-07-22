@@ -27,6 +27,10 @@ It also uses those awesome libraries:
  <img width=100 src ="/Screenshots/android_rest_sample_screenshot.png", align="center"/>
 </p>
 
+### Demo
+You can test this app with appetize: https://appetize.io/app/g57uqpd3m4nn8w45v0r8awfq9w
+<iframe src="https://appetize.io/embed/g57uqpd3m4nn8w45v0r8awfq9w?device=nexus5&scale=100&autoplay=false&orientation=portrait&deviceColor=black" width="400px" height="795px" frameborder="0" scrolling="no"></iframe>
+
 ### List of Samples
 Each sample is on a fragment and set up in the navigation drawer. It's sorted by level of complexity (from top to bottom). Also, on each sample, an explanatory TextView is here to briefly explain what's happening:
 * [Hello World] : In this fragment, you'll learn how to use an Observable and Observer. Also, you'll create your first stream and use your first operator : map( ).
