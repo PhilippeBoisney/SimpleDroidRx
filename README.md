@@ -17,6 +17,13 @@ It also uses thoses awesomes libraries:
 * [ButterKnife] : Bind Android views and callbacks to fields and methods.
 * [Retrofit] :A type-safe HTTP client for Android and Java
 
+### Screenshots
+<p align="center">
+ <img src ="/Screenshots/hello_worlds_screenshot.png", align="center"/>
+ <img src ="/Screenshots/famous_operators_screenshot.png", align="center"/>
+ <img src ="/Screenshots/error_handling_screenshot.png", align="center"/>
+</p>
+
 ### List of Samples
 Each sample is on a fragment and set up in the navigation drawer. It's sorted by complexity (from top to bottom). Also, on each sample, an explanatory TextView is here to briefly explain what's happening:
 * [Hello World] : In this fragment, you'll learn how to use an Observable and Observer. Also, you'll create your first stream and use your first operator : map( ).
