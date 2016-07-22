@@ -57,24 +57,25 @@ When you press the "SHOW" button, it subscribes to an observable. It will show a
 
 ### Contribute
 It will be awesome if you contribute to this project adding you own sample(s). Just follow this checklist :
-1. Create a Fragment and name it with the name of your sample. Put it on "Fragments" package. Also, create it's layout. You could use the other fragment as a model.
-<p align="center">
+
+- 1 Create a Fragment and name it with the name of your sample. Put it on "Fragments" package. Also, create it's layout. You could use the other fragment as a model.
+<p align="left">
  <img src ="/Steps/step1.png", align="center"/>
 </p>
-2. Add your fragment in MainActivity on "displayView" function.
+- 2 Add your fragment in MainActivity on "displayView" function.
 <p align="center">
  <img src ="/Steps/step2.png", align="center"/>
 </p>
-3. Add the title of your sample in string.xml on related array (nav_drawer_labels)
+- 3 Add the title of your sample in string.xml on related array (nav_drawer_labels)
 <p align="center">
  <img src ="/Steps/step3.png", align="center"/>
 </p>
-4. You can also modify the icon menu of your sample in NavigationDrawerAdapter on "getRessource" function.
+- 4 You can also modify the icon menu of your sample in NavigationDrawerAdapter on "getRessource" function.
 <p align="center">
  <img src ="/Steps/step4.png", align="center"/>
 </p>
-5. Update this README.md with your own infos.
-6. Make a pull request !
+- 5 Update this README.md with your own infos.
+- 6 Make a pull request !
 
 License
 -------
