@@ -18,7 +18,7 @@ It also uses thoses awesomes libraries:
 * [Retrofit] :A type-safe HTTP client for Android and Java
 
 ### Mini Screenshots
-<p align="right">
+<p align="left">
  <img width=100 src ="/Screenshots/hello_worlds_screenshot.png", align="center"/>
  <img width=100 src ="/Screenshots/famous_operators_screenshot.png", align="center"/>
  <img width=100 src ="/Screenshots/error_handling_screenshot.png", align="center"
