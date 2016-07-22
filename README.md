@@ -21,7 +21,7 @@ It also uses thoses awesomes libraries:
 <p align="left">
  <img width=100 src ="/Screenshots/hello_worlds_screenshot.png", align="center"/>
  <img width=100 src ="/Screenshots/famous_operators_screenshot.png", align="center"/>
- <img width=100 src ="/Screenshots/error_handling_screenshot.png", align="center"
+ <img width=100 src ="/Screenshots/error_handling_screenshot.png", align="center"/>
  <img width=100 src ="/Screenshots/background_tasks_screenshot.png", align="center"/>
  <img width=100 src ="/Screenshots/android_simple_sample_screenshot.png", align="center"/>
  <img width=100 src ="/Screenshots/android_rest_sample_screenshot.png", align="center"/>
@@ -33,7 +33,7 @@ Each sample is on a fragment and set up in the navigation drawer. It's sorted by
 
 >EXPLICATION: When you click on button "Map( ) my words", you'll subscribe to an observable on TextView Text. The relative stream (myStream) replace the words "Massive View Controller" by "MVVM", "Hell Callback" by "ReactiveX" and "AsyncTask" by "RxJava". Finally it adds at the end of TextView "<3 <3 <3".
 
-* <img width=200 src ="/Screenshots/hello_worlds_screenshot.png", align="center"/> [Famous Operator] : In this fragment, you'll learn the most commons operators and get used with them : flatMap( ), filter( ), take( ), doOnNext( )
+* [Famous Operator] : In this fragment, you'll learn the most commons operators and get used with them : flatMap( ), filter( ), take( ), doOnNext( )
 
 >EXPLICATION: When you click on "Play Happy !" or use the SeekBar, you'll subscribe to an observable on a string array. The relative stream (myStream) observe each item of string array, and apply to it some functions (setSmileyToItem, setCarriotReturnToItem & filterVersionAndroidThatSucks). It also take only the number of item setted by take( ).Finally, each item is showed to the TextView.
 
