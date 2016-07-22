@@ -53,22 +53,27 @@ public class Hello_World_Fragment extends Fragment {
 
     @OnClick(R.id.btn_start)
     public void onClickStart(final View v){
-
         btnStop.setEnabled(false);
-
-        getMyFirstObservable()
-                .map(StringObserverHelper.removeStringOfBadPattern())
-                .map(StringObserverHelper.removeStringOfBadCallBack())
-                .map(StringObserverHelper.removeStringAsyncTask())
-                .map(StringObserverHelper.addABunchOfLove())
-                .subscribe(getMyFirstObserver());
-
+        myStream();
     }
 
     @OnClick(R.id.btn_stop)
     public void onClickStop(final View v){
         txtview.setText("I love Massive View Controller, Hell Callback and AsyncTask !");
         btnStop.setEnabled(false);
+    }
+
+    //--------------------------------------------------
+    // Stream that handle user's flow
+    //--------------------------------------------------
+
+    private void myStream(){
+        getMyFirstObservable()
+                .map(StringObserverHelper.removeStringOfBadPattern())
+                .map(StringObserverHelper.removeStringOfBadCallBack())
+                .map(StringObserverHelper.removeStringAsyncTask())
+                .map(StringObserverHelper.addABunchOfLove())
+                .subscribe(getMyFirstObserver());
     }
 
     //--------------------------------------------------

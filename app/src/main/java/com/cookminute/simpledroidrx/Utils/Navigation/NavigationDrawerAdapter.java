@@ -43,7 +43,7 @@ public class NavigationDrawerAdapter extends RecyclerView.Adapter<NavigationDraw
     public void onBindViewHolder(MyViewHolder holder, int position) {
         NavDrawerItem current = data.get(position);
         holder.title.setText(current.getTitle());
-        holder.img.setImageResource(this.getRessource(position));
+        holder.img.setImageResource(this.getResource(position));
     }
 
     @Override
@@ -62,7 +62,7 @@ public class NavigationDrawerAdapter extends RecyclerView.Adapter<NavigationDraw
         }
     }
 
-    private int getRessource(int position){
+    private int getResource(int position){
         switch (position){
             case 0:
                 return R.drawable.ic_world;
@@ -77,7 +77,7 @@ public class NavigationDrawerAdapter extends RecyclerView.Adapter<NavigationDraw
             case 5:
                 return R.mipmap.ic_launcher;
             default:
-                return 0;
+                return R.mipmap.ic_launcher;
         }
     }
 }

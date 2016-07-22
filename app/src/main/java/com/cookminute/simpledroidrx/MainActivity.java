@@ -124,7 +124,7 @@ public class MainActivity extends AppCompatActivity implements FragmentDrawer.Fr
 
             case 3:
                 fragment = new Background_Tasks_Fragment();
-                title = "Background Task";
+                title = "Background Tasks";
                 break;
 
             case 4:

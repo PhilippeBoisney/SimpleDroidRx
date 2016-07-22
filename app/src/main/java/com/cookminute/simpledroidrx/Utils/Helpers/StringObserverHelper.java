@@ -32,7 +32,7 @@ public class StringObserverHelper {
         return new Func1<String, String> () {
             @Override
             public String call(String s) {
-                return s.replace("Hell Callback","React");
+                return s.replace("Hell Callback","ReactiveX");
             }
         };
     }

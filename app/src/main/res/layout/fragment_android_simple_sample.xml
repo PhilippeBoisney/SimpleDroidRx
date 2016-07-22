@@ -71,7 +71,7 @@
             android:textColor="@android:color/white"
             app:layout_marginRightPercent="5%"
             app:layout_marginLeftPercent="5%"
-            android:text="In this fragment, you'll learn how to set an observer to a button, and intercept network change ! \n\n1 - When you disable network (WiFi or Mobile), an event is sent and a snackbar is showed.\n\n2 - The 'SHOW' button is subscribe to an observable with RxView.clicks( ). When you press it, a snackbar is showed. "
+            android:text="In this fragment, you'll learn how to set an observer to a button, and intercept network changes ! \n\n1 - When you disable network (WiFi or Mobile), an event is sent and a snackbar is showed.\n\n2 - The 'SHOW' button is subscribe to an observable with RxView.clicks( ). When you press it, a snackbar is showed. "
             app:layout_marginTopPercent="2%"
             android:scrollbars = "vertical"/>
 
