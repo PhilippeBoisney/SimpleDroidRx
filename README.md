@@ -1,6 +1,7 @@
 <p align="center">
  <img src ="/banniere.png", align="center"/>
 </p>
+[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-SimpleDroidRx-green.svg?style=true)](https://android-arsenal.com/details/3/3998)
 # SimpleDroidRx
 An application that helps you learn and better understand ReactiveX on Android.
 
