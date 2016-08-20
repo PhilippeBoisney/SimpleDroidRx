@@ -1,4 +1,4 @@
-package com.cookminute.simpledroidrx.Utils;
+package com.cookminute.simpledroidrx.Utils.Commons;
 
 import android.content.Context;
 import android.content.Intent;

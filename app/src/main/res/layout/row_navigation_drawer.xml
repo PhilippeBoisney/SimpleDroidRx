@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:clickable="true"
-    tools:context=".Utils.Navigation.FragmentDrawer">
+    tools:context=".Utils.NavigationDrawer.FragmentDrawer">
 
     <ImageView
         android:id="@+id/row_navigation_drawer_icon"

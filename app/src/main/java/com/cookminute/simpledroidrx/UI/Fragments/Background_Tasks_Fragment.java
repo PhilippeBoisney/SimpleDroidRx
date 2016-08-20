@@ -1,4 +1,4 @@
-package com.cookminute.simpledroidrx.Fragments;
+package com.cookminute.simpledroidrx.UI.Fragments;
 
 import android.os.Bundle;
 import android.support.percent.PercentRelativeLayout;
@@ -11,7 +11,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.cookminute.simpledroidrx.R;
-import com.cookminute.simpledroidrx.Utils.Functions;
+import com.cookminute.simpledroidrx.Utils.Commons.Functions;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;

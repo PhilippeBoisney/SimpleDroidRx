@@ -1,4 +1,4 @@
-package com.cookminute.simpledroidrx.Fragments;
+package com.cookminute.simpledroidrx.UI.Fragments;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;

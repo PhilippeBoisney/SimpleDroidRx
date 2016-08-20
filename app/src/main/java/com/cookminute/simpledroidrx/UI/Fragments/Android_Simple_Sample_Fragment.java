@@ -1,4 +1,4 @@
-package com.cookminute.simpledroidrx.Fragments;
+package com.cookminute.simpledroidrx.UI.Fragments;
 
 import android.content.Intent;
 import android.content.IntentFilter;
@@ -15,7 +15,7 @@ import android.widget.TextView;
 
 import com.cantrowitz.rxbroadcast.RxBroadcast;
 import com.cookminute.simpledroidrx.R;
-import com.cookminute.simpledroidrx.Utils.Functions;
+import com.cookminute.simpledroidrx.Utils.Commons.Functions;
 import com.jakewharton.rxbinding.view.RxView;
 
 import butterknife.BindView;

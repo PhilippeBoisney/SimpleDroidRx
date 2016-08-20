@@ -41,7 +41,7 @@
 
         <fragment
             android:id="@+id/fragment_navigation_drawer"
-            android:name="com.cookminute.simpledroidrx.Utils.Navigation.FragmentDrawer"
+            android:name="com.cookminute.simpledroidrx.Utils.NavigationDrawer.FragmentDrawer"
             android:layout_width="260dp"
             android:layout_height="match_parent"
             android:layout_gravity="start"

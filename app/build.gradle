@@ -41,6 +41,11 @@ dependencies {
 
     compile 'com.github.castorflex.smoothprogressbar:library:1.1.0'
 
+    apt 'com.google.dagger:dagger-compiler:2.5'
+    compile 'com.google.dagger:dagger:2.5'
+
+    androidTestApt 'com.google.dagger:dagger-compiler:2.2'
+
     compile 'com.squareup.retrofit2:retrofit:2.1.0'
     compile 'com.squareup.retrofit2:converter-gson:2.1.0'
 }

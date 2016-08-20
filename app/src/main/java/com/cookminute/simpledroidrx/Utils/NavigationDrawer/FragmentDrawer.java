@@ -1,4 +1,4 @@
-package com.cookminute.simpledroidrx.Utils.Navigation;
+package com.cookminute.simpledroidrx.Utils.NavigationDrawer;
 
 import android.content.Context;
 import android.os.Bundle;

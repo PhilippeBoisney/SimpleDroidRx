@@ -1,4 +1,4 @@
-package com.cookminute.simpledroidrx.Utils.Navigation;
+package com.cookminute.simpledroidrx.Utils.NavigationDrawer;
 
 /**
  * Created by Philippe on 20/07/16.

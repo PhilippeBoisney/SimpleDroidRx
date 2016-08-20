@@ -1,4 +1,4 @@
-package com.cookminute.simpledroidrx;
+package com.cookminute.simpledroidrx.UI.Activities;
 
 import android.support.design.widget.CoordinatorLayout;
 import android.support.v4.app.Fragment;
@@ -13,13 +13,14 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
-import com.cookminute.simpledroidrx.Fragments.Android_REST_Sample_Fragment;
-import com.cookminute.simpledroidrx.Fragments.Android_Simple_Sample_Fragment;
-import com.cookminute.simpledroidrx.Fragments.Background_Tasks_Fragment;
-import com.cookminute.simpledroidrx.Fragments.Error_Handling_Fragment;
-import com.cookminute.simpledroidrx.Fragments.Famous_Operators_Fragment;
-import com.cookminute.simpledroidrx.Fragments.Hello_World_Fragment;
-import com.cookminute.simpledroidrx.Utils.Navigation.FragmentDrawer;
+import com.cookminute.simpledroidrx.UI.Fragments.Android_REST_Sample_Fragment;
+import com.cookminute.simpledroidrx.UI.Fragments.Android_Simple_Sample_Fragment;
+import com.cookminute.simpledroidrx.UI.Fragments.Background_Tasks_Fragment;
+import com.cookminute.simpledroidrx.UI.Fragments.Error_Handling_Fragment;
+import com.cookminute.simpledroidrx.UI.Fragments.Famous_Operators_Fragment;
+import com.cookminute.simpledroidrx.UI.Fragments.Hello_World_Fragment;
+import com.cookminute.simpledroidrx.R;
+import com.cookminute.simpledroidrx.Utils.NavigationDrawer.FragmentDrawer;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -134,7 +135,7 @@ public class MainActivity extends AppCompatActivity implements FragmentDrawer.Fr
 
             case 5:
                 fragment = new Android_REST_Sample_Fragment();
-                title = "Android REST Sample";
+                title = "Android REST Sample with Dagger";
                 break;
 
             default:

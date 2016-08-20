@@ -11,6 +11,6 @@
         <item>Error Handling</item>
         <item>Background Tasks</item>
         <item>Android Simple Sample</item>
-        <item>Android REST Sample</item>
+        <item>Android REST Sample with Dagger</item>
     </string-array>
 </resources>

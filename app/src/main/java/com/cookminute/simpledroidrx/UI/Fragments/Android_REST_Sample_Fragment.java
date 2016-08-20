@@ -1,4 +1,4 @@
-package com.cookminute.simpledroidrx.Fragments;
+package com.cookminute.simpledroidrx.UI.Fragments;
 
 import android.os.Bundle;
 import android.support.design.widget.Snackbar;
@@ -10,7 +10,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.cookminute.simpledroidrx.API.GithubMemberObserverHelper;
 import com.cookminute.simpledroidrx.R;
 import com.cookminute.simpledroidrx.Utils.Rx.RxUtils;
 
@@ -31,17 +30,13 @@ import rx.schedulers.Schedulers;
 /**
  * Created by Philippe on 21/07/16.
  */
-public class Android_REST_Sample_Fragment extends Fragment {
+public class Android_REST_Sample_Fragment extends BaseFragment {
 
     @BindView(R.id.root_view) PercentRelativeLayout rootView;
     @BindView(R.id.progress) SmoothProgressBar progress;
     @BindView(R.id.txtView) TextView txtView;
 
-
     public Android_REST_Sample_Fragment() { }
-
-    private Unbinder unbinder;
-    private Subscription mSubscription;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -49,18 +44,8 @@ public class Android_REST_Sample_Fragment extends Fragment {
     }
 
     @Override
-    public void onDestroy() {
-        super.onDestroy();
-        unbinder.unbind();
-        RxUtils.unsubscribeIfNotNull(mSubscription);
-    }
+    protected int getFragmentLayout() { return R.layout.fragment_android_rest_sample; }
 
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.fragment_android_rest_sample, container, false);
-        unbinder = ButterKnife.bind(this, rootView);
-        return rootView;
-    }
 
     //--------------------------------------------------
     // ACTIONS
@@ -82,25 +67,13 @@ public class Android_REST_Sample_Fragment extends Fragment {
     //--------------------------------------------------
 
     private void myStream(){
-
-        mSubscription = getObservable()
-
-                .flatMap(GithubMemberObserverHelper.observeEachItem())
-                .flatMap(GithubMemberObserverHelper.getGithubMember())
-                .map(GithubMemberObserverHelper.getNumberOfFollowers())
-                .reduce(GithubMemberObserverHelper.aggregateString())
-                .subscribeOn(Schedulers.io())
-                .observeOn(AndroidSchedulers.mainThread())
-                .subscribe(getObserver());
+        Log.e("TAG", "My stream execute !");
+        mSubscription = streamManager.githubMember().streamGetGithubInfoForEachMember(Arrays.asList("mojombo", "JakeWharton", "mattt")).subscribe(getObserver());
     }
 
     //--------------------------------------------------
     // Observable & Observer
     //--------------------------------------------------
-
-    Observable<List<String>> getObservable() {
-        return Observable.just(Arrays.asList("mojombo", "JakeWharton", "mattt"));
-    }
 
     private Subscriber<String> getObserver(){
         return new Subscriber<String>() {

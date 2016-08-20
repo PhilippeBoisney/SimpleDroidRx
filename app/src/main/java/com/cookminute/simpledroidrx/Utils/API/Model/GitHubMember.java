@@ -1,4 +1,4 @@
-package com.cookminute.simpledroidrx.API.Model;
+package com.cookminute.simpledroidrx.Utils.API.Model;
 
 import java.util.Locale;
 
