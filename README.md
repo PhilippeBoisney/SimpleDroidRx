@@ -17,6 +17,7 @@ With SimpleDroidRx app, you have several fragments. Each one contains some examp
 It also uses those awesome libraries:
 * [ButterKnife] : Bind Android views and callbacks to fields and methods.
 * [Retrofit] :A type-safe HTTP client for Android and Java
+* [Dagger2] : Dagger is a fully static, compile-time dependency injection framework for both Java and Android. It is an adaptation of an earlier version created by Square and now maintained by Google.
 
 ### Mini Screenshots
 <p align="left">
@@ -55,7 +56,7 @@ When you press the "DOUBLE TASKS" button, you'll subscribe to another one observ
 >EXPLICATION: When you start fragment, you subscribe to an observable on network changes. When you disable Wifi or mobile connection, you'll get notified by a Snackbar.
 When you press the "SHOW" button, it subscribes to an observable. It will show a Snackbar.
 
-* [Android REST Sample] : In this fragment, you'll learn how to make multiple http requests with only single stream.
+* [Android REST Sample] : In this fragment, you'll learn how to make multiple http requests with only single stream. Also, you will learn how to use RxJava with Dagger2 injection.
 
 >EXPLICATION: When you press "REFRESH" button, it will subscribe to an observable that gets Github followers of each person you've defined (In a String array), and after processing of requests, update the TextView.
 
@@ -104,6 +105,7 @@ License
  [Retrofit]: <http://square.github.io/retrofit/>
  [RxBroadcast]: <https://github.com/cantrowitz/RxBroadcast>
  [RxBinding]: <https://github.com/JakeWharton/RxBinding>
+ [Dagger2]: <http://google.github.io/dagger/>
  
  [Hello World]: <https://github.com/PhilippeBoisney/SimpleDroidRx/blob/master/app/src/main/java/com/cookminute/simpledroidrx/Fragments/Hello_World_Fragment.java>
  [Famous Operator]: <https://github.com/PhilippeBoisney/SimpleDroidRx/blob/master/app/src/main/java/com/cookminute/simpledroidrx/Fragments/Famous_Operators_Fragment.java>
