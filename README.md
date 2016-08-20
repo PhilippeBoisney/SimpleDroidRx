@@ -56,7 +56,7 @@ When you press the "DOUBLE TASKS" button, you'll subscribe to another one observ
 >EXPLICATION: When you start fragment, you subscribe to an observable on network changes. When you disable Wifi or mobile connection, you'll get notified by a Snackbar.
 When you press the "SHOW" button, it subscribes to an observable. It will show a Snackbar.
 
-* [Android REST Sample] : In this fragment, you'll learn how to make multiple http requests with only single stream. Also, you will learn how to use RxJava with Dagger2 injection.
+* [Android REST Sample With Dagger2] : In this fragment, you'll learn how to make multiple http requests with only single stream. Also, you will learn how to use RxJava with Dagger2 injection.
 
 >EXPLICATION: When you press "REFRESH" button, it will subscribe to an observable that gets Github followers of each person you've defined (In a String array), and after processing of requests, update the TextView.
 
@@ -112,4 +112,4 @@ License
  [Error Handling]: <https://github.com/PhilippeBoisney/SimpleDroidRx/blob/master/app/src/main/java/com/cookminute/simpledroidrx/Fragments/Error_Handling_Fragment.java>
  [Background Tasks]: <https://github.com/PhilippeBoisney/SimpleDroidRx/blob/master/app/src/main/java/com/cookminute/simpledroidrx/Fragments/Background_Tasks_Fragment.java>
  [Android Simple Sample]: <https://github.com/PhilippeBoisney/SimpleDroidRx/blob/master/app/src/main/java/com/cookminute/simpledroidrx/Fragments/Android_Simple_Sample_Fragment.java>
- [Android REST Sample]: <https://github.com/PhilippeBoisney/SimpleDroidRx/blob/master/app/src/main/java/com/cookminute/simpledroidrx/Fragments/Android_REST_Sample_Fragment.java>
+ [Android REST Sample With Dagger2]: <https://github.com/PhilippeBoisney/SimpleDroidRx/blob/master/app/src/main/java/com/cookminute/simpledroidrx/Fragments/Android_REST_Sample_Fragment.java>
