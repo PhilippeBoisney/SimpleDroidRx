@@ -107,9 +107,9 @@ License
  [RxBinding]: <https://github.com/JakeWharton/RxBinding>
  [Dagger2]: <http://google.github.io/dagger/>
  
- [Hello World]: <https://github.com/PhilippeBoisney/SimpleDroidRx/blob/master/app/src/main/java/com/cookminute/simpledroidrx/Fragments/Hello_World_Fragment.java>
- [Famous Operator]: <https://github.com/PhilippeBoisney/SimpleDroidRx/blob/master/app/src/main/java/com/cookminute/simpledroidrx/Fragments/Famous_Operators_Fragment.java>
- [Error Handling]: <https://github.com/PhilippeBoisney/SimpleDroidRx/blob/master/app/src/main/java/com/cookminute/simpledroidrx/Fragments/Error_Handling_Fragment.java>
- [Background Tasks]: <https://github.com/PhilippeBoisney/SimpleDroidRx/blob/master/app/src/main/java/com/cookminute/simpledroidrx/Fragments/Background_Tasks_Fragment.java>
- [Android Simple Sample]: <https://github.com/PhilippeBoisney/SimpleDroidRx/blob/master/app/src/main/java/com/cookminute/simpledroidrx/Fragments/Android_Simple_Sample_Fragment.java>
- [Android REST Sample With Dagger2]: <https://github.com/PhilippeBoisney/SimpleDroidRx/blob/master/app/src/main/java/com/cookminute/simpledroidrx/Fragments/Android_REST_Sample_Fragment.java>
+ [Hello World]: <https://github.com/PhilippeBoisney/SimpleDroidRx/blob/master/app/src/main/java/com/cookminute/simpledroidrx/UI/Fragments/Hello_World_Fragment.java>
+ [Famous Operator]: <https://github.com/PhilippeBoisney/SimpleDroidRx/blob/master/app/src/main/java/com/cookminute/simpledroidrx/UI/Fragments/Famous_Operators_Fragment.java>
+ [Error Handling]: <https://github.com/PhilippeBoisney/SimpleDroidRx/blob/master/app/src/main/java/com/cookminute/simpledroidrx/UI/Fragments/Error_Handling_Fragment.java>
+ [Background Tasks]: <https://github.com/PhilippeBoisney/SimpleDroidRx/blob/master/app/src/main/java/com/cookminute/simpledroidrx/UI/Fragments/Background_Tasks_Fragment.java>
+ [Android Simple Sample]: <https://github.com/PhilippeBoisney/SimpleDroidRx/blob/master/app/src/main/java/com/cookminute/simpledroidrx/UI/Fragments/Android_Simple_Sample_Fragment.java>
+ [Android REST Sample With Dagger2]: <https://github.com/PhilippeBoisney/SimpleDroidRx/blob/master/app/src/main/java/com/cookminute/simpledroidrx/UI/Fragments/Android_REST_Sample_Fragment.java>
